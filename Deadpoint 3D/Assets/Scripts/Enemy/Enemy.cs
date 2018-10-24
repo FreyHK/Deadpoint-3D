@@ -6,9 +6,11 @@ public class Enemy : MonoBehaviour {
 
     public Weapon weapon;
     public Health health;
-    public Transform playerTransform;
+
+    Transform playerTransform;
 
 	void Start () {
+        playerTransform = FindObjectOfType<PlayerMovement>().transform;
         health.OnDeath += OnDeath;
 
         weapon.transform.position = transform.position;

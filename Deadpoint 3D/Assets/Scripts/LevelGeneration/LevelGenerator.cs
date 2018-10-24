@@ -16,9 +16,10 @@ namespace LevelGeneration {
             GenerateLevel();
             //StartCoroutine(GenerateLevel());
         }
+        
+        //public LevelRoom[] RoomPrefabs;
 
-        //TODO make list
-        public LevelRoom RoomPrefab;
+        public WeightedGameObjectList RoomPrefabs;
 
         public LevelRoom StartingRoom;
 
@@ -76,7 +77,8 @@ namespace LevelGeneration {
         }
 
         LevelRoom CreateRoom () {
-            LevelRoom room = Instantiate(RoomPrefab, transform);
+            GameObject prefab = RoomPrefabs.GetRandomElement();
+            LevelRoom room = Instantiate(prefab, transform).GetComponent<LevelRoom>();
 
             return room;
         }

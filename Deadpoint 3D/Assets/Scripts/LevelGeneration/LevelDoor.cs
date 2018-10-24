@@ -8,6 +8,8 @@ namespace LevelGeneration {
         //Set in Unity
         public GameObject WallVisual;
 
+        //TODO add support for an optional door visual
+
         public void SetState (bool IsDoor) {
             if (IsDoor) {
                 WallVisual.SetActive(false);
