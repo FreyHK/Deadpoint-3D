@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08624492cf041bd48b1c495a25a9c656, type: 3}
+  m_Name: Weapon_AK47
+  m_EditorClassIdentifier: 
+  inventorySlot: 0
+  FireDamage: 8
+  FireDelay: 0.2
+  FireRange: 999
+  AmmoClipSize: 10
+  AmmoCapacity: 30
+  ReloadDelay: 1.8
+  IdleAnimationName: AK47_Idle
+  FireAnimationName: AK47_Shoot
+  ReloadAnimationName: AK47_Reload
+  ItemIcon: {fileID: 21300000, guid: 048dc233a65bee54c9f7f1399f1d0ab4, type: 3}
